@@ -52,7 +52,11 @@ class _UserInputScreenState extends State<UserInputScreen> {
     final userProvider = Provider.of<UserProvider>(context, listen: false);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Enter Your Details')),
+      appBar: AppBar(
+        title: const Text('Enter Your Details'),
+     
+        centerTitle: true,
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
